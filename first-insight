@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+from lib import fetch_feed, format_post
+
+insights = fetch_feed('https://insights.ubuntu.com/feed')
+
+print(format_post(insights.entries[0]))
